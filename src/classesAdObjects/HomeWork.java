@@ -4,20 +4,20 @@ public class HomeWork {
     public static void main(String[] args) {
         Book harryPotter = new Book("Harry Potter", 1997);
         Author author = new Author("Джоан", "Кетлин");
-        System.out.println("harryPotter.name = " + harryPotter.name);
-        System.out.println("harryPotter.age = " + harryPotter.age);
-        System.out.println("author.lastName = " + author.lastName);
-        System.out.println("author.firstName = " + author.firstName);
+        System.out.println("harryPotter.name = " + harryPotter.getName());
+        System.out.println("harryPotter.age = " + harryPotter.getAge());
+        System.out.println("author.lastName = " + author.getLastName());
+        System.out.println("author.firstName = " + author.getFirstName());
 
         harryPotter.setAge(2000);
-        System.out.println("harryPotter.age = " + harryPotter.age);
+        System.out.println("harryPotter.age = " + harryPotter.getAge());
 
         Book goldenDonkey = new Book("Золотой осел", 200);
         Author apuleius = new Author("Луций", "Апулей");
-        System.out.println("goldenDonkey.name = " + goldenDonkey.name);
-        System.out.println("goldenDonkey.age = " + goldenDonkey.age);
-        System.out.println("apuleius.firstName = " + apuleius.firstName);
-        System.out.println("apuleius.lastName = " + apuleius.lastName);
+        System.out.println("goldenDonkey.name = " + goldenDonkey.getName());
+        System.out.println("goldenDonkey.age = " + goldenDonkey.getAge());
+        System.out.println("apuleius.firstName = " + apuleius.getFirstName());
+        System.out.println("apuleius.lastName = " + apuleius.getLastName());
 
         System.out.println();
 
