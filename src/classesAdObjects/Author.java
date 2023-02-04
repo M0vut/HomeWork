@@ -1,8 +1,8 @@
 package classesAdObjects;
 
 public class Author {
-    String firstName;
-    String lastName;
+    private String firstName;
+    private String lastName;
     public Author(String firstName, String lastName){
         this.firstName = firstName;
         this.lastName = lastName;
@@ -12,5 +12,8 @@ public class Author {
     }
     public String getLastName(){
         return this.lastName;
+    }
+    public String toString(){
+        return this.firstName + "  " + this.lastName;
     }
 }

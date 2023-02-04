@@ -1,14 +1,14 @@
 package classesAdObjects;
 
 public class Book {
-    String name;
-    int age;
-    public Book(String name, int age){
-        this.name = name;
+   private String author;
+   private int age;
+    public Book(String author, int age){
+        this.author = author;
         this.age = age;
     }
     public String getName(){
-        return this.name;
+        return this.author;
     }
     public int getAge(){
         return this.age;
@@ -16,4 +16,5 @@ public class Book {
     public void setAge(int age){
         this.age = age;
     }
+
 }
