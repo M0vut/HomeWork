@@ -1,6 +1,14 @@
 package classesAdObjects;
 
 public class Author {
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
     private String firstName;
     private String lastName;
     public Author(String firstName, String lastName){
@@ -16,4 +24,6 @@ public class Author {
     public String toString(){
         return this.firstName + "  " + this.lastName;
     }
+
+
 }
