@@ -2,24 +2,22 @@ package classesAdObjects;
 
 public class HomeWork {
     public static void main(String[] args) {
-        Book harryPotter = new Book("Гарри Поттер",1997);
-        Author author = new Author("Джоан", "Кетлин");
-        System.out.println("harryPotter.name = " + harryPotter.getName());
-        System.out.println("harryPotter.age = " + harryPotter.getAge());
-        System.out.println("author.lastName = " + author.getLastName());
-        System.out.println("author.firstName = " + author.getFirstName());
+        Author pushkin = new Author("Пушкин","Александр");
+        Author bulgakov = new Author("Булгаков","Михаил");
 
-        harryPotter.setAge(2000);
-        System.out.println("harryPotter.age = " + harryPotter.getAge());
+        Book ruslanAndLyudmila = new Book(1821,pushkin, "Руслан и Людмила");
+        Book theMasterAndMargarita = new Book(1966, bulgakov, "Мастер и Маргарита");
+        ruslanAndLyudmila.setAge(1820);
+        sout(ruslanAndLyudmila);
+        sout(theMasterAndMargarita);
+        }
 
-        Book goldenDonkey = new Book("Золотой осел",200);
-        Author apuleius = new Author("Луций", "Апулей");
-        System.out.println("goldenDonkey.name = " + goldenDonkey.getName());
-        System.out.println("goldenDonkey.age = " + goldenDonkey.getAge());
-        System.out.println("apuleius.firstName = " + apuleius.getFirstName());
-        System.out.println("apuleius.lastName = " + apuleius.getLastName());
+        static void sout(Book book){
+            System.out.println(
+              "Автор " + book.getAuthor().getName() + " " + book.getAuthor().getSurName() + " книга " + book.getBookTitle()
+                    + " первое издание " + book.getAge()
+            );
+        }
 
 
-
-    }
 }

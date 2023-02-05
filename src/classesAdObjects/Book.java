@@ -1,23 +1,23 @@
 package classesAdObjects;
 
 public class Book {
+    private int age;
+    private Author author;
 
+    private String bookTitle;
 
-    private String name;
-   private Author author;
-   private int age;
-
-    public String getName() {
-        return name;
-    }
-
-    public Book(String name, int age) {
-        this.name = name;
+    public Book(int age, Author author, String bookTitle) {
         this.age = age;
+        this.author = author;
+        this.bookTitle = bookTitle;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public Author getAuthor() {
@@ -28,11 +28,11 @@ public class Book {
         this.author = author;
     }
 
-    public int getAge() {
-        return age;
+    public String getBookTitle() {
+        return bookTitle;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setBookTitle(String bookTitle) {
+        this.bookTitle = bookTitle;
     }
 }

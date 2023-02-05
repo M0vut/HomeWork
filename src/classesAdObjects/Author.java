@@ -1,27 +1,27 @@
 package classesAdObjects;
 
 public class Author {
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+     String name;
+     String surName;
+
+    public String getName() {
+        return name;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    private String firstName;
-    private String lastName;
-    public Author(String firstName, String lastName){
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-    public String getFirstName(){
-        return this.firstName;
-    }
-    public String getLastName(){
-        return this.lastName;
+    public Author(String surName, String name) {
+        this.surName = surName;
+        this.name = name;
     }
 
+    public String getSurName() {
+        return surName;
+    }
 
-
+    public void setSurName(String surName) {
+        this.surName = surName;
+    }
 }
