@@ -1,5 +1,7 @@
 package classesAdObjects;
 
+import java.util.Objects;
+
 public class Book {
     private int age;
     private Author author;
@@ -34,5 +36,25 @@ public class Book {
 
     public void setBookTitle(String bookTitle) {
         this.bookTitle = bookTitle;
+    }
+    @Override
+    public String toString() {
+        return "Впервые вышла в " +
+                " " + age +
+                "г ," + author +
+                " ,название книги " + bookTitle ;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return age == book.age && Objects.equals(author, book.author) && Objects.equals(bookTitle, book.bookTitle);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(age, author, bookTitle);
     }
 }

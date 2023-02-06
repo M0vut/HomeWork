@@ -10,6 +10,9 @@ public class HomeWork {
         ruslanAndLyudmila.setAge(1820);
         sout(ruslanAndLyudmila);
         sout(theMasterAndMargarita);
+
+        System.out.println(ruslanAndLyudmila);
+        System.out.println(theMasterAndMargarita);
         }
 
         static void sout(Book book){
